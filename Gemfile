@@ -14,6 +14,7 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 
+gem 'foundation-rails'
 gem 'sass-rails', '4.0.3'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
