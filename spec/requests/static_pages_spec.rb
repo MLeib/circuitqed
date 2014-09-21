@@ -13,18 +13,18 @@ describe "Static pages" do
       visit '/static_pages/home'
       expect(page).to have_content('Circuit QED Publications')
     end
-    
+   
     it "should have the content 'My profile'" do
       visit '/static_pages/home'
       expect(page).to have_content('My profile')
-    end
-    
+    end      
+   
     it "should have the right title" do
   		visit '/static_pages/home'
-  		expect(page).to have_title("Circuit QED | Home")
+  		expect(page).not_to have_title(" | Home")
 	end
   end
-  
+
   describe "Impressum" do
   
     it "should have the content 'Haftungsausschluss'" do
